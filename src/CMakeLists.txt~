@@ -75,4 +75,13 @@ TARGET_LINK_LIBRARIES(trackbar_DilateAndErode ${OpenCV_LIBS})
 ADD_EXECUTABLE(floodFill  floodFill.cpp)
 TARGET_LINK_LIBRARIES(floodFill ${OpenCV_LIBS})
 
+ADD_EXECUTABLE(resize  resize.cpp)
+TARGET_LINK_LIBRARIES(resize ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(pyrDown_Up  pyrDown_Up.cpp)
+TARGET_LINK_LIBRARIES(pyrDown_Up ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(trackbar_threshold  trackbar_threshold.cpp)
+TARGET_LINK_LIBRARIES(trackbar_threshold ${OpenCV_LIBS})
+
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")

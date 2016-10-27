@@ -310,6 +310,32 @@ openPicture/fast:
 .PHONY : openPicture/fast
 
 #=============================================================================
+# Target rules for targets named pyrDown_Up
+
+# Build rule for target.
+pyrDown_Up: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pyrDown_Up
+.PHONY : pyrDown_Up
+
+# fast build rule for target.
+pyrDown_Up/fast:
+	$(MAKE) -f src/CMakeFiles/pyrDown_Up.dir/build.make src/CMakeFiles/pyrDown_Up.dir/build
+.PHONY : pyrDown_Up/fast
+
+#=============================================================================
+# Target rules for targets named resize
+
+# Build rule for target.
+resize: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 resize
+.PHONY : resize
+
+# fast build rule for target.
+resize/fast:
+	$(MAKE) -f src/CMakeFiles/resize.dir/build.make src/CMakeFiles/resize.dir/build
+.PHONY : resize/fast
+
+#=============================================================================
 # Target rules for targets named setMouseCallback
 
 # Build rule for target.
@@ -388,6 +414,19 @@ trackbar_contrast_brightness/fast:
 .PHONY : trackbar_contrast_brightness/fast
 
 #=============================================================================
+# Target rules for targets named trackbar_threshold
+
+# Build rule for target.
+trackbar_threshold: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trackbar_threshold
+.PHONY : trackbar_threshold
+
+# fast build rule for target.
+trackbar_threshold/fast:
+	$(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/build
+.PHONY : trackbar_threshold/fast
+
+#=============================================================================
 # Target rules for targets named yamlRead
 
 # Build rule for target.
@@ -437,12 +476,15 @@ help:
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
 	@echo "... openPicture"
+	@echo "... pyrDown_Up"
+	@echo "... resize"
 	@echo "... setMouseCallback"
 	@echo "... setROI"
 	@echo "... splitMerge"
 	@echo "... testMat"
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
+	@echo "... trackbar_threshold"
 	@echo "... yamlRead"
 	@echo "... yamlWrite"
 .PHONY : help

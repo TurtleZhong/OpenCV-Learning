@@ -326,6 +326,34 @@ openPicture/fast:
 .PHONY : openPicture/fast
 
 # Convenience name for target.
+src/CMakeFiles/pyrDown_Up.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/pyrDown_Up.dir/rule
+.PHONY : src/CMakeFiles/pyrDown_Up.dir/rule
+
+# Convenience name for target.
+pyrDown_Up: src/CMakeFiles/pyrDown_Up.dir/rule
+.PHONY : pyrDown_Up
+
+# fast build rule for target.
+pyrDown_Up/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/pyrDown_Up.dir/build.make src/CMakeFiles/pyrDown_Up.dir/build
+.PHONY : pyrDown_Up/fast
+
+# Convenience name for target.
+src/CMakeFiles/resize.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/resize.dir/rule
+.PHONY : src/CMakeFiles/resize.dir/rule
+
+# Convenience name for target.
+resize: src/CMakeFiles/resize.dir/rule
+.PHONY : resize
+
+# fast build rule for target.
+resize/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/resize.dir/build.make src/CMakeFiles/resize.dir/build
+.PHONY : resize/fast
+
+# Convenience name for target.
 src/CMakeFiles/setMouseCallback.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/setMouseCallback.dir/rule
 .PHONY : src/CMakeFiles/setMouseCallback.dir/rule
@@ -408,6 +436,20 @@ trackbar_contrast_brightness: src/CMakeFiles/trackbar_contrast_brightness.dir/ru
 trackbar_contrast_brightness/fast:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_contrast_brightness.dir/build.make src/CMakeFiles/trackbar_contrast_brightness.dir/build
 .PHONY : trackbar_contrast_brightness/fast
+
+# Convenience name for target.
+src/CMakeFiles/trackbar_threshold.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/trackbar_threshold.dir/rule
+.PHONY : src/CMakeFiles/trackbar_threshold.dir/rule
+
+# Convenience name for target.
+trackbar_threshold: src/CMakeFiles/trackbar_threshold.dir/rule
+.PHONY : trackbar_threshold
+
+# fast build rule for target.
+trackbar_threshold/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/build
+.PHONY : trackbar_threshold/fast
 
 # Convenience name for target.
 src/CMakeFiles/yamlRead.dir/rule:
@@ -821,6 +863,54 @@ openPicture.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/openPicture.dir/build.make src/CMakeFiles/openPicture.dir/openPicture.cpp.s
 .PHONY : openPicture.cpp.s
 
+pyrDown_Up.o: pyrDown_Up.cpp.o
+.PHONY : pyrDown_Up.o
+
+# target to build an object file
+pyrDown_Up.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/pyrDown_Up.dir/build.make src/CMakeFiles/pyrDown_Up.dir/pyrDown_Up.cpp.o
+.PHONY : pyrDown_Up.cpp.o
+
+pyrDown_Up.i: pyrDown_Up.cpp.i
+.PHONY : pyrDown_Up.i
+
+# target to preprocess a source file
+pyrDown_Up.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/pyrDown_Up.dir/build.make src/CMakeFiles/pyrDown_Up.dir/pyrDown_Up.cpp.i
+.PHONY : pyrDown_Up.cpp.i
+
+pyrDown_Up.s: pyrDown_Up.cpp.s
+.PHONY : pyrDown_Up.s
+
+# target to generate assembly for a file
+pyrDown_Up.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/pyrDown_Up.dir/build.make src/CMakeFiles/pyrDown_Up.dir/pyrDown_Up.cpp.s
+.PHONY : pyrDown_Up.cpp.s
+
+resize.o: resize.cpp.o
+.PHONY : resize.o
+
+# target to build an object file
+resize.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/resize.dir/build.make src/CMakeFiles/resize.dir/resize.cpp.o
+.PHONY : resize.cpp.o
+
+resize.i: resize.cpp.i
+.PHONY : resize.i
+
+# target to preprocess a source file
+resize.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/resize.dir/build.make src/CMakeFiles/resize.dir/resize.cpp.i
+.PHONY : resize.cpp.i
+
+resize.s: resize.cpp.s
+.PHONY : resize.s
+
+# target to generate assembly for a file
+resize.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/resize.dir/build.make src/CMakeFiles/resize.dir/resize.cpp.s
+.PHONY : resize.cpp.s
+
 setMouseCallback.o: setMouseCallback.cpp.o
 .PHONY : setMouseCallback.o
 
@@ -965,6 +1055,30 @@ trackbar_contrast_brightness.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_contrast_brightness.dir/build.make src/CMakeFiles/trackbar_contrast_brightness.dir/trackbar_contrast_brightness.cpp.s
 .PHONY : trackbar_contrast_brightness.cpp.s
 
+trackbar_threshold.o: trackbar_threshold.cpp.o
+.PHONY : trackbar_threshold.o
+
+# target to build an object file
+trackbar_threshold.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/trackbar_threshold.cpp.o
+.PHONY : trackbar_threshold.cpp.o
+
+trackbar_threshold.i: trackbar_threshold.cpp.i
+.PHONY : trackbar_threshold.i
+
+# target to preprocess a source file
+trackbar_threshold.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/trackbar_threshold.cpp.i
+.PHONY : trackbar_threshold.cpp.i
+
+trackbar_threshold.s: trackbar_threshold.cpp.s
+.PHONY : trackbar_threshold.s
+
+# target to generate assembly for a file
+trackbar_threshold.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/trackbar_threshold.cpp.s
+.PHONY : trackbar_threshold.cpp.s
+
 yamlRead.o: yamlRead.cpp.o
 .PHONY : yamlRead.o
 
@@ -1036,13 +1150,16 @@ help:
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
 	@echo "... openPicture"
+	@echo "... pyrDown_Up"
 	@echo "... rebuild_cache"
+	@echo "... resize"
 	@echo "... setMouseCallback"
 	@echo "... setROI"
 	@echo "... splitMerge"
 	@echo "... testMat"
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
+	@echo "... trackbar_threshold"
 	@echo "... yamlRead"
 	@echo "... yamlWrite"
 	@echo "... access2Pixel.o"
@@ -1093,6 +1210,12 @@ help:
 	@echo "... openPicture.o"
 	@echo "... openPicture.i"
 	@echo "... openPicture.s"
+	@echo "... pyrDown_Up.o"
+	@echo "... pyrDown_Up.i"
+	@echo "... pyrDown_Up.s"
+	@echo "... resize.o"
+	@echo "... resize.i"
+	@echo "... resize.s"
 	@echo "... setMouseCallback.o"
 	@echo "... setMouseCallback.i"
 	@echo "... setMouseCallback.s"
@@ -1111,6 +1234,9 @@ help:
 	@echo "... trackbar_contrast_brightness.o"
 	@echo "... trackbar_contrast_brightness.i"
 	@echo "... trackbar_contrast_brightness.s"
+	@echo "... trackbar_threshold.o"
+	@echo "... trackbar_threshold.i"
+	@echo "... trackbar_threshold.s"
 	@echo "... yamlRead.o"
 	@echo "... yamlRead.i"
 	@echo "... yamlRead.s"

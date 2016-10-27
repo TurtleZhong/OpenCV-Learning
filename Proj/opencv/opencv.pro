@@ -31,7 +31,10 @@ SOURCES += \
     ../../src/bilateraFliter.cpp \
     ../../src/dilateAndErode.cpp \
     ../../src/trackbar_DilateAndErode.cpp \
-    ../../src/floodFill.cpp
+    ../../src/floodFill.cpp \
+    ../../src/resize.cpp \
+    ../../src/pyrDown_Up.cpp \
+    ../../src/trackbar_threshold.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 
