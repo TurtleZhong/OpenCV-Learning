@@ -84,4 +84,7 @@ TARGET_LINK_LIBRARIES(pyrDown_Up ${OpenCV_LIBS})
 ADD_EXECUTABLE(trackbar_threshold  trackbar_threshold.cpp)
 TARGET_LINK_LIBRARIES(trackbar_threshold ${OpenCV_LIBS})
 
+ADD_EXECUTABLE(canny  canny.cpp)
+TARGET_LINK_LIBRARIES(canny ${OpenCV_LIBS})
+
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")

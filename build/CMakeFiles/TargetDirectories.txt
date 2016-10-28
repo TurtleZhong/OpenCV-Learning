@@ -3,6 +3,7 @@
 /home/m/zxl-opencv/build/src/CMakeFiles/bilateraFliter.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/blurFliter.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/boxFliter.dir
+/home/m/zxl-opencv/build/src/CMakeFiles/canny.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/comprehensive.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/contrastBrightness.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/creatTrackbar.dir

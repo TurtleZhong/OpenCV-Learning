@@ -167,6 +167,19 @@ boxFliter/fast:
 .PHONY : boxFliter/fast
 
 #=============================================================================
+# Target rules for targets named canny
+
+# Build rule for target.
+canny: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 canny
+.PHONY : canny
+
+# fast build rule for target.
+canny/fast:
+	$(MAKE) -f src/CMakeFiles/canny.dir/build.make src/CMakeFiles/canny.dir/build
+.PHONY : canny/fast
+
+#=============================================================================
 # Target rules for targets named comprehensive
 
 # Build rule for target.
@@ -465,6 +478,7 @@ help:
 	@echo "... bilateraFliter"
 	@echo "... blurFliter"
 	@echo "... boxFliter"
+	@echo "... canny"
 	@echo "... comprehensive"
 	@echo "... contrastBrightness"
 	@echo "... creatTrackbar"

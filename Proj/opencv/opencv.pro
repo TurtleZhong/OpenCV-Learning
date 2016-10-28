@@ -34,7 +34,8 @@ SOURCES += \
     ../../src/floodFill.cpp \
     ../../src/resize.cpp \
     ../../src/pyrDown_Up.cpp \
-    ../../src/trackbar_threshold.cpp
+    ../../src/trackbar_threshold.cpp \
+    ../../src/canny.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 

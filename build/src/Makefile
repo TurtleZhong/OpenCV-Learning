@@ -172,6 +172,20 @@ boxFliter/fast:
 .PHONY : boxFliter/fast
 
 # Convenience name for target.
+src/CMakeFiles/canny.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/canny.dir/rule
+.PHONY : src/CMakeFiles/canny.dir/rule
+
+# Convenience name for target.
+canny: src/CMakeFiles/canny.dir/rule
+.PHONY : canny
+
+# fast build rule for target.
+canny/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/canny.dir/build.make src/CMakeFiles/canny.dir/build
+.PHONY : canny/fast
+
+# Convenience name for target.
 src/CMakeFiles/comprehensive.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/comprehensive.dir/rule
 .PHONY : src/CMakeFiles/comprehensive.dir/rule
@@ -598,6 +612,30 @@ boxFliter.s: boxFliter.cpp.s
 boxFliter.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/boxFliter.dir/build.make src/CMakeFiles/boxFliter.dir/boxFliter.cpp.s
 .PHONY : boxFliter.cpp.s
+
+canny.o: canny.cpp.o
+.PHONY : canny.o
+
+# target to build an object file
+canny.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/canny.dir/build.make src/CMakeFiles/canny.dir/canny.cpp.o
+.PHONY : canny.cpp.o
+
+canny.i: canny.cpp.i
+.PHONY : canny.i
+
+# target to preprocess a source file
+canny.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/canny.dir/build.make src/CMakeFiles/canny.dir/canny.cpp.i
+.PHONY : canny.cpp.i
+
+canny.s: canny.cpp.s
+.PHONY : canny.s
+
+# target to generate assembly for a file
+canny.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/canny.dir/build.make src/CMakeFiles/canny.dir/canny.cpp.s
+.PHONY : canny.cpp.s
 
 comprehensive.o: comprehensive.cpp.o
 .PHONY : comprehensive.o
@@ -1138,6 +1176,7 @@ help:
 	@echo "... bilateraFliter"
 	@echo "... blurFliter"
 	@echo "... boxFliter"
+	@echo "... canny"
 	@echo "... comprehensive"
 	@echo "... contrastBrightness"
 	@echo "... creatTrackbar"
@@ -1177,6 +1216,9 @@ help:
 	@echo "... boxFliter.o"
 	@echo "... boxFliter.i"
 	@echo "... boxFliter.s"
+	@echo "... canny.o"
+	@echo "... canny.i"
+	@echo "... canny.s"
 	@echo "... comprehensive.o"
 	@echo "... comprehensive.i"
 	@echo "... comprehensive.s"

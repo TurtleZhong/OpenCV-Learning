@@ -50,6 +50,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/bilateraFliter.dir/DependInfo.cmake"
   "src/CMakeFiles/blurFliter.dir/DependInfo.cmake"
   "src/CMakeFiles/boxFliter.dir/DependInfo.cmake"
+  "src/CMakeFiles/canny.dir/DependInfo.cmake"
   "src/CMakeFiles/comprehensive.dir/DependInfo.cmake"
   "src/CMakeFiles/contrastBrightness.dir/DependInfo.cmake"
   "src/CMakeFiles/creatTrackbar.dir/DependInfo.cmake"
