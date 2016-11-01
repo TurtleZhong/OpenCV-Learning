@@ -258,6 +258,19 @@ drawSample/fast:
 .PHONY : drawSample/fast
 
 #=============================================================================
+# Target rules for targets named findCounters
+
+# Build rule for target.
+findCounters: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 findCounters
+.PHONY : findCounters
+
+# fast build rule for target.
+findCounters/fast:
+	$(MAKE) -f src/CMakeFiles/findCounters.dir/build.make src/CMakeFiles/findCounters.dir/build
+.PHONY : findCounters/fast
+
+#=============================================================================
 # Target rules for targets named floodFill
 
 # Build rule for target.
@@ -453,6 +466,19 @@ trackbar_contrast_brightness/fast:
 .PHONY : trackbar_contrast_brightness/fast
 
 #=============================================================================
+# Target rules for targets named trackbar_findCounters
+
+# Build rule for target.
+trackbar_findCounters: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trackbar_findCounters
+.PHONY : trackbar_findCounters
+
+# fast build rule for target.
+trackbar_findCounters/fast:
+	$(MAKE) -f src/CMakeFiles/trackbar_findCounters.dir/build.make src/CMakeFiles/trackbar_findCounters.dir/build
+.PHONY : trackbar_findCounters/fast
+
+#=============================================================================
 # Target rules for targets named trackbar_threshold
 
 # Build rule for target.
@@ -524,6 +550,7 @@ help:
 	@echo "... dilateAndErode"
 	@echo "... drawCircle"
 	@echo "... drawSample"
+	@echo "... findCounters"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
 	@echo "... houghCircle"
@@ -539,6 +566,7 @@ help:
 	@echo "... testMat"
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
+	@echo "... trackbar_findCounters"
 	@echo "... trackbar_threshold"
 	@echo "... wrapAffine"
 	@echo "... yamlRead"

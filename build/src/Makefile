@@ -270,6 +270,20 @@ drawSample/fast:
 .PHONY : drawSample/fast
 
 # Convenience name for target.
+src/CMakeFiles/findCounters.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/findCounters.dir/rule
+.PHONY : src/CMakeFiles/findCounters.dir/rule
+
+# Convenience name for target.
+findCounters: src/CMakeFiles/findCounters.dir/rule
+.PHONY : findCounters
+
+# fast build rule for target.
+findCounters/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/findCounters.dir/build.make src/CMakeFiles/findCounters.dir/build
+.PHONY : findCounters/fast
+
+# Convenience name for target.
 src/CMakeFiles/floodFill.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/floodFill.dir/rule
 .PHONY : src/CMakeFiles/floodFill.dir/rule
@@ -478,6 +492,20 @@ trackbar_contrast_brightness: src/CMakeFiles/trackbar_contrast_brightness.dir/ru
 trackbar_contrast_brightness/fast:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_contrast_brightness.dir/build.make src/CMakeFiles/trackbar_contrast_brightness.dir/build
 .PHONY : trackbar_contrast_brightness/fast
+
+# Convenience name for target.
+src/CMakeFiles/trackbar_findCounters.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/trackbar_findCounters.dir/rule
+.PHONY : src/CMakeFiles/trackbar_findCounters.dir/rule
+
+# Convenience name for target.
+trackbar_findCounters: src/CMakeFiles/trackbar_findCounters.dir/rule
+.PHONY : trackbar_findCounters
+
+# fast build rule for target.
+trackbar_findCounters/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_findCounters.dir/build.make src/CMakeFiles/trackbar_findCounters.dir/build
+.PHONY : trackbar_findCounters/fast
 
 # Convenience name for target.
 src/CMakeFiles/trackbar_threshold.dir/rule:
@@ -822,6 +850,30 @@ drawSample.s: drawSample.cpp.s
 drawSample.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/drawSample.dir/build.make src/CMakeFiles/drawSample.dir/drawSample.cpp.s
 .PHONY : drawSample.cpp.s
+
+findCounters.o: findCounters.cpp.o
+.PHONY : findCounters.o
+
+# target to build an object file
+findCounters.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/findCounters.dir/build.make src/CMakeFiles/findCounters.dir/findCounters.cpp.o
+.PHONY : findCounters.cpp.o
+
+findCounters.i: findCounters.cpp.i
+.PHONY : findCounters.i
+
+# target to preprocess a source file
+findCounters.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/findCounters.dir/build.make src/CMakeFiles/findCounters.dir/findCounters.cpp.i
+.PHONY : findCounters.cpp.i
+
+findCounters.s: findCounters.cpp.s
+.PHONY : findCounters.s
+
+# target to generate assembly for a file
+findCounters.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/findCounters.dir/build.make src/CMakeFiles/findCounters.dir/findCounters.cpp.s
+.PHONY : findCounters.cpp.s
 
 floodFill.o: floodFill.cpp.o
 .PHONY : floodFill.o
@@ -1183,6 +1235,30 @@ trackbar_contrast_brightness.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_contrast_brightness.dir/build.make src/CMakeFiles/trackbar_contrast_brightness.dir/trackbar_contrast_brightness.cpp.s
 .PHONY : trackbar_contrast_brightness.cpp.s
 
+trackbar_findCounters.o: trackbar_findCounters.cpp.o
+.PHONY : trackbar_findCounters.o
+
+# target to build an object file
+trackbar_findCounters.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_findCounters.dir/build.make src/CMakeFiles/trackbar_findCounters.dir/trackbar_findCounters.cpp.o
+.PHONY : trackbar_findCounters.cpp.o
+
+trackbar_findCounters.i: trackbar_findCounters.cpp.i
+.PHONY : trackbar_findCounters.i
+
+# target to preprocess a source file
+trackbar_findCounters.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_findCounters.dir/build.make src/CMakeFiles/trackbar_findCounters.dir/trackbar_findCounters.cpp.i
+.PHONY : trackbar_findCounters.cpp.i
+
+trackbar_findCounters.s: trackbar_findCounters.cpp.s
+.PHONY : trackbar_findCounters.s
+
+# target to generate assembly for a file
+trackbar_findCounters.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_findCounters.dir/build.make src/CMakeFiles/trackbar_findCounters.dir/trackbar_findCounters.cpp.s
+.PHONY : trackbar_findCounters.cpp.s
+
 trackbar_threshold.o: trackbar_threshold.cpp.o
 .PHONY : trackbar_threshold.o
 
@@ -1298,6 +1374,7 @@ help:
 	@echo "... drawCircle"
 	@echo "... drawSample"
 	@echo "... edit_cache"
+	@echo "... findCounters"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
 	@echo "... houghCircle"
@@ -1314,6 +1391,7 @@ help:
 	@echo "... testMat"
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
+	@echo "... trackbar_findCounters"
 	@echo "... trackbar_threshold"
 	@echo "... wrapAffine"
 	@echo "... yamlRead"
@@ -1354,6 +1432,9 @@ help:
 	@echo "... drawSample.o"
 	@echo "... drawSample.i"
 	@echo "... drawSample.s"
+	@echo "... findCounters.o"
+	@echo "... findCounters.i"
+	@echo "... findCounters.s"
 	@echo "... floodFill.o"
 	@echo "... floodFill.i"
 	@echo "... floodFill.s"
@@ -1399,6 +1480,9 @@ help:
 	@echo "... trackbar_contrast_brightness.o"
 	@echo "... trackbar_contrast_brightness.i"
 	@echo "... trackbar_contrast_brightness.s"
+	@echo "... trackbar_findCounters.o"
+	@echo "... trackbar_findCounters.i"
+	@echo "... trackbar_findCounters.s"
 	@echo "... trackbar_threshold.o"
 	@echo "... trackbar_threshold.i"
 	@echo "... trackbar_threshold.s"

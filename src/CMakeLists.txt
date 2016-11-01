@@ -93,7 +93,13 @@ TARGET_LINK_LIBRARIES(houghLines ${OpenCV_LIBS})
 ADD_EXECUTABLE(houghCircle  houghCircle.cpp)
 TARGET_LINK_LIBRARIES(houghCircle ${OpenCV_LIBS})
 
-
 ADD_EXECUTABLE(wrapAffine  wrapAffine.cpp)
 TARGET_LINK_LIBRARIES(wrapAffine ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(findCounters  findCounters.cpp)
+TARGET_LINK_LIBRARIES(findCounters ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(trackbar_findCounters  trackbar_findCounters.cpp)
+TARGET_LINK_LIBRARIES(trackbar_findCounters ${OpenCV_LIBS})
+
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")

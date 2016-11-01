@@ -38,7 +38,9 @@ SOURCES += \
     ../../src/canny.cpp \
     ../../src/houghLines.cpp \
     ../../src/houghCircle.cpp \
-    ../../src/wrapAffine.cpp
+    ../../src/wrapAffine.cpp \
+    ../../src/findCounters.cpp \
+    ../../src/trackbar_findCounters.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 
