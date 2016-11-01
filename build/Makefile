@@ -284,6 +284,19 @@ gaussianBlur/fast:
 .PHONY : gaussianBlur/fast
 
 #=============================================================================
+# Target rules for targets named houghCircle
+
+# Build rule for target.
+houghCircle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 houghCircle
+.PHONY : houghCircle
+
+# fast build rule for target.
+houghCircle/fast:
+	$(MAKE) -f src/CMakeFiles/houghCircle.dir/build.make src/CMakeFiles/houghCircle.dir/build
+.PHONY : houghCircle/fast
+
+#=============================================================================
 # Target rules for targets named houghLines
 
 # Build rule for target.
@@ -453,6 +466,19 @@ trackbar_threshold/fast:
 .PHONY : trackbar_threshold/fast
 
 #=============================================================================
+# Target rules for targets named wrapAffine
+
+# Build rule for target.
+wrapAffine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 wrapAffine
+.PHONY : wrapAffine
+
+# fast build rule for target.
+wrapAffine/fast:
+	$(MAKE) -f src/CMakeFiles/wrapAffine.dir/build.make src/CMakeFiles/wrapAffine.dir/build
+.PHONY : wrapAffine/fast
+
+#=============================================================================
 # Target rules for targets named yamlRead
 
 # Build rule for target.
@@ -500,6 +526,7 @@ help:
 	@echo "... drawSample"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
+	@echo "... houghCircle"
 	@echo "... houghLines"
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
@@ -513,6 +540,7 @@ help:
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
 	@echo "... trackbar_threshold"
+	@echo "... wrapAffine"
 	@echo "... yamlRead"
 	@echo "... yamlWrite"
 .PHONY : help

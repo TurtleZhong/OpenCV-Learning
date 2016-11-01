@@ -298,6 +298,20 @@ gaussianBlur/fast:
 .PHONY : gaussianBlur/fast
 
 # Convenience name for target.
+src/CMakeFiles/houghCircle.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/houghCircle.dir/rule
+.PHONY : src/CMakeFiles/houghCircle.dir/rule
+
+# Convenience name for target.
+houghCircle: src/CMakeFiles/houghCircle.dir/rule
+.PHONY : houghCircle
+
+# fast build rule for target.
+houghCircle/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghCircle.dir/build.make src/CMakeFiles/houghCircle.dir/build
+.PHONY : houghCircle/fast
+
+# Convenience name for target.
 src/CMakeFiles/houghLines.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/houghLines.dir/rule
 .PHONY : src/CMakeFiles/houghLines.dir/rule
@@ -478,6 +492,20 @@ trackbar_threshold: src/CMakeFiles/trackbar_threshold.dir/rule
 trackbar_threshold/fast:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/build
 .PHONY : trackbar_threshold/fast
+
+# Convenience name for target.
+src/CMakeFiles/wrapAffine.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/wrapAffine.dir/rule
+.PHONY : src/CMakeFiles/wrapAffine.dir/rule
+
+# Convenience name for target.
+wrapAffine: src/CMakeFiles/wrapAffine.dir/rule
+.PHONY : wrapAffine
+
+# fast build rule for target.
+wrapAffine/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/wrapAffine.dir/build.make src/CMakeFiles/wrapAffine.dir/build
+.PHONY : wrapAffine/fast
 
 # Convenience name for target.
 src/CMakeFiles/yamlRead.dir/rule:
@@ -843,6 +871,30 @@ gaussianBlur.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/gaussianBlur.dir/build.make src/CMakeFiles/gaussianBlur.dir/gaussianBlur.cpp.s
 .PHONY : gaussianBlur.cpp.s
 
+houghCircle.o: houghCircle.cpp.o
+.PHONY : houghCircle.o
+
+# target to build an object file
+houghCircle.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghCircle.dir/build.make src/CMakeFiles/houghCircle.dir/houghCircle.cpp.o
+.PHONY : houghCircle.cpp.o
+
+houghCircle.i: houghCircle.cpp.i
+.PHONY : houghCircle.i
+
+# target to preprocess a source file
+houghCircle.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghCircle.dir/build.make src/CMakeFiles/houghCircle.dir/houghCircle.cpp.i
+.PHONY : houghCircle.cpp.i
+
+houghCircle.s: houghCircle.cpp.s
+.PHONY : houghCircle.s
+
+# target to generate assembly for a file
+houghCircle.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghCircle.dir/build.make src/CMakeFiles/houghCircle.dir/houghCircle.cpp.s
+.PHONY : houghCircle.cpp.s
+
 houghLines.o: houghLines.cpp.o
 .PHONY : houghLines.o
 
@@ -1155,6 +1207,30 @@ trackbar_threshold.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/trackbar_threshold.cpp.s
 .PHONY : trackbar_threshold.cpp.s
 
+wrapAffine.o: wrapAffine.cpp.o
+.PHONY : wrapAffine.o
+
+# target to build an object file
+wrapAffine.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/wrapAffine.dir/build.make src/CMakeFiles/wrapAffine.dir/wrapAffine.cpp.o
+.PHONY : wrapAffine.cpp.o
+
+wrapAffine.i: wrapAffine.cpp.i
+.PHONY : wrapAffine.i
+
+# target to preprocess a source file
+wrapAffine.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/wrapAffine.dir/build.make src/CMakeFiles/wrapAffine.dir/wrapAffine.cpp.i
+.PHONY : wrapAffine.cpp.i
+
+wrapAffine.s: wrapAffine.cpp.s
+.PHONY : wrapAffine.s
+
+# target to generate assembly for a file
+wrapAffine.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/wrapAffine.dir/build.make src/CMakeFiles/wrapAffine.dir/wrapAffine.cpp.s
+.PHONY : wrapAffine.cpp.s
+
 yamlRead.o: yamlRead.cpp.o
 .PHONY : yamlRead.o
 
@@ -1224,6 +1300,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
+	@echo "... houghCircle"
 	@echo "... houghLines"
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
@@ -1238,6 +1315,7 @@ help:
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
 	@echo "... trackbar_threshold"
+	@echo "... wrapAffine"
 	@echo "... yamlRead"
 	@echo "... yamlWrite"
 	@echo "... access2Pixel.o"
@@ -1282,6 +1360,9 @@ help:
 	@echo "... gaussianBlur.o"
 	@echo "... gaussianBlur.i"
 	@echo "... gaussianBlur.s"
+	@echo "... houghCircle.o"
+	@echo "... houghCircle.i"
+	@echo "... houghCircle.s"
 	@echo "... houghLines.o"
 	@echo "... houghLines.i"
 	@echo "... houghLines.s"
@@ -1321,6 +1402,9 @@ help:
 	@echo "... trackbar_threshold.o"
 	@echo "... trackbar_threshold.i"
 	@echo "... trackbar_threshold.s"
+	@echo "... wrapAffine.o"
+	@echo "... wrapAffine.i"
+	@echo "... wrapAffine.s"
 	@echo "... yamlRead.o"
 	@echo "... yamlRead.i"
 	@echo "... yamlRead.s"

@@ -12,6 +12,7 @@
 /home/m/zxl-opencv/build/src/CMakeFiles/drawSample.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/floodFill.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/gaussianBlur.dir
+/home/m/zxl-opencv/build/src/CMakeFiles/houghCircle.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/houghLines.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/imwrite.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/linearFliterComprehensive.dir
@@ -25,5 +26,6 @@
 /home/m/zxl-opencv/build/src/CMakeFiles/trackbar_DilateAndErode.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/trackbar_contrast_brightness.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/trackbar_threshold.dir
+/home/m/zxl-opencv/build/src/CMakeFiles/wrapAffine.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/yamlRead.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/yamlWrite.dir

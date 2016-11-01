@@ -36,7 +36,9 @@ SOURCES += \
     ../../src/pyrDown_Up.cpp \
     ../../src/trackbar_threshold.cpp \
     ../../src/canny.cpp \
-    ../../src/houghLines.cpp
+    ../../src/houghLines.cpp \
+    ../../src/houghCircle.cpp \
+    ../../src/wrapAffine.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 
