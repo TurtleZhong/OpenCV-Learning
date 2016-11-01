@@ -87,4 +87,6 @@ TARGET_LINK_LIBRARIES(trackbar_threshold ${OpenCV_LIBS})
 ADD_EXECUTABLE(canny  canny.cpp)
 TARGET_LINK_LIBRARIES(canny ${OpenCV_LIBS})
 
+ADD_EXECUTABLE(houghLines  houghLines.cpp)
+TARGET_LINK_LIBRARIES(houghLines ${OpenCV_LIBS})
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")

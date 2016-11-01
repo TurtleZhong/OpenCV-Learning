@@ -284,6 +284,19 @@ gaussianBlur/fast:
 .PHONY : gaussianBlur/fast
 
 #=============================================================================
+# Target rules for targets named houghLines
+
+# Build rule for target.
+houghLines: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 houghLines
+.PHONY : houghLines
+
+# fast build rule for target.
+houghLines/fast:
+	$(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/build
+.PHONY : houghLines/fast
+
+#=============================================================================
 # Target rules for targets named imwrite
 
 # Build rule for target.
@@ -487,6 +500,7 @@ help:
 	@echo "... drawSample"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
+	@echo "... houghLines"
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
 	@echo "... openPicture"

@@ -35,7 +35,8 @@ SOURCES += \
     ../../src/resize.cpp \
     ../../src/pyrDown_Up.cpp \
     ../../src/trackbar_threshold.cpp \
-    ../../src/canny.cpp
+    ../../src/canny.cpp \
+    ../../src/houghLines.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 

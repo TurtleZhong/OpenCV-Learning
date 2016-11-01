@@ -298,6 +298,20 @@ gaussianBlur/fast:
 .PHONY : gaussianBlur/fast
 
 # Convenience name for target.
+src/CMakeFiles/houghLines.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/houghLines.dir/rule
+.PHONY : src/CMakeFiles/houghLines.dir/rule
+
+# Convenience name for target.
+houghLines: src/CMakeFiles/houghLines.dir/rule
+.PHONY : houghLines
+
+# fast build rule for target.
+houghLines/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/build
+.PHONY : houghLines/fast
+
+# Convenience name for target.
 src/CMakeFiles/imwrite.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/imwrite.dir/rule
 .PHONY : src/CMakeFiles/imwrite.dir/rule
@@ -829,6 +843,30 @@ gaussianBlur.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/gaussianBlur.dir/build.make src/CMakeFiles/gaussianBlur.dir/gaussianBlur.cpp.s
 .PHONY : gaussianBlur.cpp.s
 
+houghLines.o: houghLines.cpp.o
+.PHONY : houghLines.o
+
+# target to build an object file
+houghLines.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/houghLines.cpp.o
+.PHONY : houghLines.cpp.o
+
+houghLines.i: houghLines.cpp.i
+.PHONY : houghLines.i
+
+# target to preprocess a source file
+houghLines.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/houghLines.cpp.i
+.PHONY : houghLines.cpp.i
+
+houghLines.s: houghLines.cpp.s
+.PHONY : houghLines.s
+
+# target to generate assembly for a file
+houghLines.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/houghLines.cpp.s
+.PHONY : houghLines.cpp.s
+
 imwrite.o: imwrite.cpp.o
 .PHONY : imwrite.o
 
@@ -1186,6 +1224,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
+	@echo "... houghLines"
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
 	@echo "... openPicture"
@@ -1243,6 +1282,9 @@ help:
 	@echo "... gaussianBlur.o"
 	@echo "... gaussianBlur.i"
 	@echo "... gaussianBlur.s"
+	@echo "... houghLines.o"
+	@echo "... houghLines.i"
+	@echo "... houghLines.s"
 	@echo "... imwrite.o"
 	@echo "... imwrite.i"
 	@echo "... imwrite.s"

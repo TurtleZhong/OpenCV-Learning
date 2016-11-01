@@ -20,8 +20,6 @@ int main(int argc, char *argv[])
     srcImage1.copyTo(cannyImage, edge);
     imshow("blur-canny", cannyImage);
 
-
-
     waitKey(0);
     return 0;
 }
