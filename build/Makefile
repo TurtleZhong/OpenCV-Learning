@@ -206,6 +206,19 @@ contrastBrightness/fast:
 .PHONY : contrastBrightness/fast
 
 #=============================================================================
+# Target rules for targets named convexHull
+
+# Build rule for target.
+convexHull: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 convexHull
+.PHONY : convexHull
+
+# fast build rule for target.
+convexHull/fast:
+	$(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/build
+.PHONY : convexHull/fast
+
+#=============================================================================
 # Target rules for targets named creatTrackbar
 
 # Build rule for target.
@@ -546,6 +559,7 @@ help:
 	@echo "... canny"
 	@echo "... comprehensive"
 	@echo "... contrastBrightness"
+	@echo "... convexHull"
 	@echo "... creatTrackbar"
 	@echo "... dilateAndErode"
 	@echo "... drawCircle"

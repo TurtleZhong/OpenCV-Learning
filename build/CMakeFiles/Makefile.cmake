@@ -53,6 +53,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/canny.dir/DependInfo.cmake"
   "src/CMakeFiles/comprehensive.dir/DependInfo.cmake"
   "src/CMakeFiles/contrastBrightness.dir/DependInfo.cmake"
+  "src/CMakeFiles/convexHull.dir/DependInfo.cmake"
   "src/CMakeFiles/creatTrackbar.dir/DependInfo.cmake"
   "src/CMakeFiles/dilateAndErode.dir/DependInfo.cmake"
   "src/CMakeFiles/drawCircle.dir/DependInfo.cmake"

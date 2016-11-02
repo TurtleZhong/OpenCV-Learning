@@ -6,6 +6,7 @@
 /home/m/zxl-opencv/build/src/CMakeFiles/canny.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/comprehensive.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/contrastBrightness.dir
+/home/m/zxl-opencv/build/src/CMakeFiles/convexHull.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/creatTrackbar.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/dilateAndErode.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/drawCircle.dir

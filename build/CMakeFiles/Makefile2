@@ -67,6 +67,7 @@ src/all: src/CMakeFiles/boxFliter.dir/all
 src/all: src/CMakeFiles/canny.dir/all
 src/all: src/CMakeFiles/comprehensive.dir/all
 src/all: src/CMakeFiles/contrastBrightness.dir/all
+src/all: src/CMakeFiles/convexHull.dir/all
 src/all: src/CMakeFiles/creatTrackbar.dir/all
 src/all: src/CMakeFiles/dilateAndErode.dir/all
 src/all: src/CMakeFiles/drawCircle.dir/all
@@ -103,6 +104,7 @@ src/clean: src/CMakeFiles/boxFliter.dir/clean
 src/clean: src/CMakeFiles/canny.dir/clean
 src/clean: src/CMakeFiles/comprehensive.dir/clean
 src/clean: src/CMakeFiles/contrastBrightness.dir/clean
+src/clean: src/CMakeFiles/convexHull.dir/clean
 src/clean: src/CMakeFiles/creatTrackbar.dir/clean
 src/clean: src/CMakeFiles/dilateAndErode.dir/clean
 src/clean: src/CMakeFiles/drawCircle.dir/clean
@@ -415,13 +417,48 @@ clean: src/CMakeFiles/contrastBrightness.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target src/CMakeFiles/convexHull.dir
+
+# All Build rule for target.
+src/CMakeFiles/convexHull.dir/all:
+	$(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/depend
+	$(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  9
+	@echo "Built target convexHull"
+.PHONY : src/CMakeFiles/convexHull.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/convexHull.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/convexHull.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/m/zxl-opencv/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/convexHull.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/m/zxl-opencv/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/convexHull.dir/rule
+
+# Convenience name for target.
+convexHull: src/CMakeFiles/convexHull.dir/rule
+.PHONY : convexHull
+
+# clean rule for target.
+src/CMakeFiles/convexHull.dir/clean:
+	$(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/clean
+.PHONY : src/CMakeFiles/convexHull.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/convexHull.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/creatTrackbar.dir
 
 # All Build rule for target.
 src/CMakeFiles/creatTrackbar.dir/all:
 	$(MAKE) -f src/CMakeFiles/creatTrackbar.dir/build.make src/CMakeFiles/creatTrackbar.dir/depend
 	$(MAKE) -f src/CMakeFiles/creatTrackbar.dir/build.make src/CMakeFiles/creatTrackbar.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  10
 	@echo "Built target creatTrackbar"
 .PHONY : src/CMakeFiles/creatTrackbar.dir/all
 
@@ -456,7 +493,7 @@ clean: src/CMakeFiles/creatTrackbar.dir/clean
 src/CMakeFiles/dilateAndErode.dir/all:
 	$(MAKE) -f src/CMakeFiles/dilateAndErode.dir/build.make src/CMakeFiles/dilateAndErode.dir/depend
 	$(MAKE) -f src/CMakeFiles/dilateAndErode.dir/build.make src/CMakeFiles/dilateAndErode.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  11
 	@echo "Built target dilateAndErode"
 .PHONY : src/CMakeFiles/dilateAndErode.dir/all
 
@@ -491,7 +528,7 @@ clean: src/CMakeFiles/dilateAndErode.dir/clean
 src/CMakeFiles/drawCircle.dir/all:
 	$(MAKE) -f src/CMakeFiles/drawCircle.dir/build.make src/CMakeFiles/drawCircle.dir/depend
 	$(MAKE) -f src/CMakeFiles/drawCircle.dir/build.make src/CMakeFiles/drawCircle.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  12
 	@echo "Built target drawCircle"
 .PHONY : src/CMakeFiles/drawCircle.dir/all
 
@@ -526,7 +563,7 @@ clean: src/CMakeFiles/drawCircle.dir/clean
 src/CMakeFiles/drawSample.dir/all:
 	$(MAKE) -f src/CMakeFiles/drawSample.dir/build.make src/CMakeFiles/drawSample.dir/depend
 	$(MAKE) -f src/CMakeFiles/drawSample.dir/build.make src/CMakeFiles/drawSample.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  13
 	@echo "Built target drawSample"
 .PHONY : src/CMakeFiles/drawSample.dir/all
 
@@ -561,7 +598,7 @@ clean: src/CMakeFiles/drawSample.dir/clean
 src/CMakeFiles/findCounters.dir/all:
 	$(MAKE) -f src/CMakeFiles/findCounters.dir/build.make src/CMakeFiles/findCounters.dir/depend
 	$(MAKE) -f src/CMakeFiles/findCounters.dir/build.make src/CMakeFiles/findCounters.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  14
 	@echo "Built target findCounters"
 .PHONY : src/CMakeFiles/findCounters.dir/all
 
@@ -596,7 +633,7 @@ clean: src/CMakeFiles/findCounters.dir/clean
 src/CMakeFiles/floodFill.dir/all:
 	$(MAKE) -f src/CMakeFiles/floodFill.dir/build.make src/CMakeFiles/floodFill.dir/depend
 	$(MAKE) -f src/CMakeFiles/floodFill.dir/build.make src/CMakeFiles/floodFill.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  15
 	@echo "Built target floodFill"
 .PHONY : src/CMakeFiles/floodFill.dir/all
 
@@ -631,7 +668,7 @@ clean: src/CMakeFiles/floodFill.dir/clean
 src/CMakeFiles/gaussianBlur.dir/all:
 	$(MAKE) -f src/CMakeFiles/gaussianBlur.dir/build.make src/CMakeFiles/gaussianBlur.dir/depend
 	$(MAKE) -f src/CMakeFiles/gaussianBlur.dir/build.make src/CMakeFiles/gaussianBlur.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  16
 	@echo "Built target gaussianBlur"
 .PHONY : src/CMakeFiles/gaussianBlur.dir/all
 
@@ -666,7 +703,7 @@ clean: src/CMakeFiles/gaussianBlur.dir/clean
 src/CMakeFiles/houghCircle.dir/all:
 	$(MAKE) -f src/CMakeFiles/houghCircle.dir/build.make src/CMakeFiles/houghCircle.dir/depend
 	$(MAKE) -f src/CMakeFiles/houghCircle.dir/build.make src/CMakeFiles/houghCircle.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  16
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  17
 	@echo "Built target houghCircle"
 .PHONY : src/CMakeFiles/houghCircle.dir/all
 
@@ -701,7 +738,7 @@ clean: src/CMakeFiles/houghCircle.dir/clean
 src/CMakeFiles/houghLines.dir/all:
 	$(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/depend
 	$(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  18
 	@echo "Built target houghLines"
 .PHONY : src/CMakeFiles/houghLines.dir/all
 
@@ -736,7 +773,7 @@ clean: src/CMakeFiles/houghLines.dir/clean
 src/CMakeFiles/imwrite.dir/all:
 	$(MAKE) -f src/CMakeFiles/imwrite.dir/build.make src/CMakeFiles/imwrite.dir/depend
 	$(MAKE) -f src/CMakeFiles/imwrite.dir/build.make src/CMakeFiles/imwrite.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  18
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  19
 	@echo "Built target imwrite"
 .PHONY : src/CMakeFiles/imwrite.dir/all
 
@@ -771,7 +808,7 @@ clean: src/CMakeFiles/imwrite.dir/clean
 src/CMakeFiles/linearFliterComprehensive.dir/all:
 	$(MAKE) -f src/CMakeFiles/linearFliterComprehensive.dir/build.make src/CMakeFiles/linearFliterComprehensive.dir/depend
 	$(MAKE) -f src/CMakeFiles/linearFliterComprehensive.dir/build.make src/CMakeFiles/linearFliterComprehensive.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  19
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  20
 	@echo "Built target linearFliterComprehensive"
 .PHONY : src/CMakeFiles/linearFliterComprehensive.dir/all
 
@@ -806,7 +843,7 @@ clean: src/CMakeFiles/linearFliterComprehensive.dir/clean
 src/CMakeFiles/openPicture.dir/all:
 	$(MAKE) -f src/CMakeFiles/openPicture.dir/build.make src/CMakeFiles/openPicture.dir/depend
 	$(MAKE) -f src/CMakeFiles/openPicture.dir/build.make src/CMakeFiles/openPicture.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  20
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  21
 	@echo "Built target openPicture"
 .PHONY : src/CMakeFiles/openPicture.dir/all
 
@@ -841,7 +878,7 @@ clean: src/CMakeFiles/openPicture.dir/clean
 src/CMakeFiles/pyrDown_Up.dir/all:
 	$(MAKE) -f src/CMakeFiles/pyrDown_Up.dir/build.make src/CMakeFiles/pyrDown_Up.dir/depend
 	$(MAKE) -f src/CMakeFiles/pyrDown_Up.dir/build.make src/CMakeFiles/pyrDown_Up.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  21
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  22
 	@echo "Built target pyrDown_Up"
 .PHONY : src/CMakeFiles/pyrDown_Up.dir/all
 
@@ -876,7 +913,7 @@ clean: src/CMakeFiles/pyrDown_Up.dir/clean
 src/CMakeFiles/resize.dir/all:
 	$(MAKE) -f src/CMakeFiles/resize.dir/build.make src/CMakeFiles/resize.dir/depend
 	$(MAKE) -f src/CMakeFiles/resize.dir/build.make src/CMakeFiles/resize.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  23
 	@echo "Built target resize"
 .PHONY : src/CMakeFiles/resize.dir/all
 
@@ -911,7 +948,7 @@ clean: src/CMakeFiles/resize.dir/clean
 src/CMakeFiles/setMouseCallback.dir/all:
 	$(MAKE) -f src/CMakeFiles/setMouseCallback.dir/build.make src/CMakeFiles/setMouseCallback.dir/depend
 	$(MAKE) -f src/CMakeFiles/setMouseCallback.dir/build.make src/CMakeFiles/setMouseCallback.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  23
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  24
 	@echo "Built target setMouseCallback"
 .PHONY : src/CMakeFiles/setMouseCallback.dir/all
 
@@ -946,7 +983,7 @@ clean: src/CMakeFiles/setMouseCallback.dir/clean
 src/CMakeFiles/setROI.dir/all:
 	$(MAKE) -f src/CMakeFiles/setROI.dir/build.make src/CMakeFiles/setROI.dir/depend
 	$(MAKE) -f src/CMakeFiles/setROI.dir/build.make src/CMakeFiles/setROI.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  24
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  25
 	@echo "Built target setROI"
 .PHONY : src/CMakeFiles/setROI.dir/all
 
@@ -981,7 +1018,7 @@ clean: src/CMakeFiles/setROI.dir/clean
 src/CMakeFiles/splitMerge.dir/all:
 	$(MAKE) -f src/CMakeFiles/splitMerge.dir/build.make src/CMakeFiles/splitMerge.dir/depend
 	$(MAKE) -f src/CMakeFiles/splitMerge.dir/build.make src/CMakeFiles/splitMerge.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  25
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  26
 	@echo "Built target splitMerge"
 .PHONY : src/CMakeFiles/splitMerge.dir/all
 
@@ -1016,7 +1053,7 @@ clean: src/CMakeFiles/splitMerge.dir/clean
 src/CMakeFiles/testMat.dir/all:
 	$(MAKE) -f src/CMakeFiles/testMat.dir/build.make src/CMakeFiles/testMat.dir/depend
 	$(MAKE) -f src/CMakeFiles/testMat.dir/build.make src/CMakeFiles/testMat.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  26
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  27
 	@echo "Built target testMat"
 .PHONY : src/CMakeFiles/testMat.dir/all
 
@@ -1051,7 +1088,7 @@ clean: src/CMakeFiles/testMat.dir/clean
 src/CMakeFiles/trackbar_DilateAndErode.dir/all:
 	$(MAKE) -f src/CMakeFiles/trackbar_DilateAndErode.dir/build.make src/CMakeFiles/trackbar_DilateAndErode.dir/depend
 	$(MAKE) -f src/CMakeFiles/trackbar_DilateAndErode.dir/build.make src/CMakeFiles/trackbar_DilateAndErode.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  27
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  28
 	@echo "Built target trackbar_DilateAndErode"
 .PHONY : src/CMakeFiles/trackbar_DilateAndErode.dir/all
 
@@ -1086,7 +1123,7 @@ clean: src/CMakeFiles/trackbar_DilateAndErode.dir/clean
 src/CMakeFiles/trackbar_contrast_brightness.dir/all:
 	$(MAKE) -f src/CMakeFiles/trackbar_contrast_brightness.dir/build.make src/CMakeFiles/trackbar_contrast_brightness.dir/depend
 	$(MAKE) -f src/CMakeFiles/trackbar_contrast_brightness.dir/build.make src/CMakeFiles/trackbar_contrast_brightness.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  28
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  29
 	@echo "Built target trackbar_contrast_brightness"
 .PHONY : src/CMakeFiles/trackbar_contrast_brightness.dir/all
 
@@ -1121,7 +1158,7 @@ clean: src/CMakeFiles/trackbar_contrast_brightness.dir/clean
 src/CMakeFiles/trackbar_findCounters.dir/all:
 	$(MAKE) -f src/CMakeFiles/trackbar_findCounters.dir/build.make src/CMakeFiles/trackbar_findCounters.dir/depend
 	$(MAKE) -f src/CMakeFiles/trackbar_findCounters.dir/build.make src/CMakeFiles/trackbar_findCounters.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  29
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  30
 	@echo "Built target trackbar_findCounters"
 .PHONY : src/CMakeFiles/trackbar_findCounters.dir/all
 
@@ -1156,7 +1193,7 @@ clean: src/CMakeFiles/trackbar_findCounters.dir/clean
 src/CMakeFiles/trackbar_threshold.dir/all:
 	$(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/depend
 	$(MAKE) -f src/CMakeFiles/trackbar_threshold.dir/build.make src/CMakeFiles/trackbar_threshold.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  30
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  31
 	@echo "Built target trackbar_threshold"
 .PHONY : src/CMakeFiles/trackbar_threshold.dir/all
 
@@ -1191,7 +1228,7 @@ clean: src/CMakeFiles/trackbar_threshold.dir/clean
 src/CMakeFiles/wrapAffine.dir/all:
 	$(MAKE) -f src/CMakeFiles/wrapAffine.dir/build.make src/CMakeFiles/wrapAffine.dir/depend
 	$(MAKE) -f src/CMakeFiles/wrapAffine.dir/build.make src/CMakeFiles/wrapAffine.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  31
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  32
 	@echo "Built target wrapAffine"
 .PHONY : src/CMakeFiles/wrapAffine.dir/all
 
@@ -1226,7 +1263,7 @@ clean: src/CMakeFiles/wrapAffine.dir/clean
 src/CMakeFiles/yamlRead.dir/all:
 	$(MAKE) -f src/CMakeFiles/yamlRead.dir/build.make src/CMakeFiles/yamlRead.dir/depend
 	$(MAKE) -f src/CMakeFiles/yamlRead.dir/build.make src/CMakeFiles/yamlRead.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  32
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  33
 	@echo "Built target yamlRead"
 .PHONY : src/CMakeFiles/yamlRead.dir/all
 
@@ -1261,7 +1298,7 @@ clean: src/CMakeFiles/yamlRead.dir/clean
 src/CMakeFiles/yamlWrite.dir/all:
 	$(MAKE) -f src/CMakeFiles/yamlWrite.dir/build.make src/CMakeFiles/yamlWrite.dir/depend
 	$(MAKE) -f src/CMakeFiles/yamlWrite.dir/build.make src/CMakeFiles/yamlWrite.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  33
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/m/zxl-opencv/build/CMakeFiles  34
 	@echo "Built target yamlWrite"
 .PHONY : src/CMakeFiles/yamlWrite.dir/all
 

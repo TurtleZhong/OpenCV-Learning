@@ -214,6 +214,20 @@ contrastBrightness/fast:
 .PHONY : contrastBrightness/fast
 
 # Convenience name for target.
+src/CMakeFiles/convexHull.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/convexHull.dir/rule
+.PHONY : src/CMakeFiles/convexHull.dir/rule
+
+# Convenience name for target.
+convexHull: src/CMakeFiles/convexHull.dir/rule
+.PHONY : convexHull
+
+# fast build rule for target.
+convexHull/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/build
+.PHONY : convexHull/fast
+
+# Convenience name for target.
 src/CMakeFiles/creatTrackbar.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/creatTrackbar.dir/rule
 .PHONY : src/CMakeFiles/creatTrackbar.dir/rule
@@ -754,6 +768,30 @@ contrastBrightness.s: contrastBrightness.cpp.s
 contrastBrightness.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/contrastBrightness.dir/build.make src/CMakeFiles/contrastBrightness.dir/contrastBrightness.cpp.s
 .PHONY : contrastBrightness.cpp.s
+
+convexHull.o: convexHull.cpp.o
+.PHONY : convexHull.o
+
+# target to build an object file
+convexHull.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/convexHull.cpp.o
+.PHONY : convexHull.cpp.o
+
+convexHull.i: convexHull.cpp.i
+.PHONY : convexHull.i
+
+# target to preprocess a source file
+convexHull.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/convexHull.cpp.i
+.PHONY : convexHull.cpp.i
+
+convexHull.s: convexHull.cpp.s
+.PHONY : convexHull.s
+
+# target to generate assembly for a file
+convexHull.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/convexHull.dir/build.make src/CMakeFiles/convexHull.dir/convexHull.cpp.s
+.PHONY : convexHull.cpp.s
 
 creatTrackbar.o: creatTrackbar.cpp.o
 .PHONY : creatTrackbar.o
@@ -1369,6 +1407,7 @@ help:
 	@echo "... canny"
 	@echo "... comprehensive"
 	@echo "... contrastBrightness"
+	@echo "... convexHull"
 	@echo "... creatTrackbar"
 	@echo "... dilateAndErode"
 	@echo "... drawCircle"
@@ -1420,6 +1459,9 @@ help:
 	@echo "... contrastBrightness.o"
 	@echo "... contrastBrightness.i"
 	@echo "... contrastBrightness.s"
+	@echo "... convexHull.o"
+	@echo "... convexHull.i"
+	@echo "... convexHull.s"
 	@echo "... creatTrackbar.o"
 	@echo "... creatTrackbar.i"
 	@echo "... creatTrackbar.s"

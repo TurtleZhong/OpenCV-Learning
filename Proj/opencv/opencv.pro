@@ -40,7 +40,8 @@ SOURCES += \
     ../../src/houghCircle.cpp \
     ../../src/wrapAffine.cpp \
     ../../src/findCounters.cpp \
-    ../../src/trackbar_findCounters.cpp
+    ../../src/trackbar_findCounters.cpp \
+    ../../src/convexHull.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 

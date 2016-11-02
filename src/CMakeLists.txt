@@ -102,4 +102,8 @@ TARGET_LINK_LIBRARIES(findCounters ${OpenCV_LIBS})
 ADD_EXECUTABLE(trackbar_findCounters  trackbar_findCounters.cpp)
 TARGET_LINK_LIBRARIES(trackbar_findCounters ${OpenCV_LIBS})
 
+
+ADD_EXECUTABLE(convexHull  convexHull.cpp)
+TARGET_LINK_LIBRARIES(convexHull ${OpenCV_LIBS})
+
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")
