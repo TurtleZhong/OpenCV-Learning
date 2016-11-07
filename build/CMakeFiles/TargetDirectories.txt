@@ -16,6 +16,7 @@
 /home/m/zxl-opencv/build/src/CMakeFiles/gaussianBlur.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/houghCircle.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/houghLines.dir
+/home/m/zxl-opencv/build/src/CMakeFiles/hsHistogram.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/imwrite.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/linearFliterComprehensive.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/openPicture.dir

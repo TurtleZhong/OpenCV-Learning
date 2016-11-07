@@ -41,7 +41,8 @@ SOURCES += \
     ../../src/wrapAffine.cpp \
     ../../src/findCounters.cpp \
     ../../src/trackbar_findCounters.cpp \
-    ../../src/convexHull.cpp
+    ../../src/convexHull.cpp \
+    ../../src/hsHistogram.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 

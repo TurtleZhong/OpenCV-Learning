@@ -336,6 +336,19 @@ houghLines/fast:
 .PHONY : houghLines/fast
 
 #=============================================================================
+# Target rules for targets named hsHistogram
+
+# Build rule for target.
+hsHistogram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hsHistogram
+.PHONY : hsHistogram
+
+# fast build rule for target.
+hsHistogram/fast:
+	$(MAKE) -f src/CMakeFiles/hsHistogram.dir/build.make src/CMakeFiles/hsHistogram.dir/build
+.PHONY : hsHistogram/fast
+
+#=============================================================================
 # Target rules for targets named imwrite
 
 # Build rule for target.
@@ -569,6 +582,7 @@ help:
 	@echo "... gaussianBlur"
 	@echo "... houghCircle"
 	@echo "... houghLines"
+	@echo "... hsHistogram"
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
 	@echo "... openPicture"

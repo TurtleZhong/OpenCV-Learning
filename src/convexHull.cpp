@@ -39,7 +39,6 @@ int main(int argc, char *argv[])
         line(image, point0, point, Scalar(0, 0, 255), 3 );
         point0 = point;
     }
-    RotatedRect
 
     imshow("hull", image);
 

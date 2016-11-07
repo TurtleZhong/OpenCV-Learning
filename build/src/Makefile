@@ -354,6 +354,20 @@ houghLines/fast:
 .PHONY : houghLines/fast
 
 # Convenience name for target.
+src/CMakeFiles/hsHistogram.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/hsHistogram.dir/rule
+.PHONY : src/CMakeFiles/hsHistogram.dir/rule
+
+# Convenience name for target.
+hsHistogram: src/CMakeFiles/hsHistogram.dir/rule
+.PHONY : hsHistogram
+
+# fast build rule for target.
+hsHistogram/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/hsHistogram.dir/build.make src/CMakeFiles/hsHistogram.dir/build
+.PHONY : hsHistogram/fast
+
+# Convenience name for target.
 src/CMakeFiles/imwrite.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/imwrite.dir/rule
 .PHONY : src/CMakeFiles/imwrite.dir/rule
@@ -1009,6 +1023,30 @@ houghLines.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/houghLines.dir/build.make src/CMakeFiles/houghLines.dir/houghLines.cpp.s
 .PHONY : houghLines.cpp.s
 
+hsHistogram.o: hsHistogram.cpp.o
+.PHONY : hsHistogram.o
+
+# target to build an object file
+hsHistogram.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/hsHistogram.dir/build.make src/CMakeFiles/hsHistogram.dir/hsHistogram.cpp.o
+.PHONY : hsHistogram.cpp.o
+
+hsHistogram.i: hsHistogram.cpp.i
+.PHONY : hsHistogram.i
+
+# target to preprocess a source file
+hsHistogram.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/hsHistogram.dir/build.make src/CMakeFiles/hsHistogram.dir/hsHistogram.cpp.i
+.PHONY : hsHistogram.cpp.i
+
+hsHistogram.s: hsHistogram.cpp.s
+.PHONY : hsHistogram.s
+
+# target to generate assembly for a file
+hsHistogram.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/hsHistogram.dir/build.make src/CMakeFiles/hsHistogram.dir/hsHistogram.cpp.s
+.PHONY : hsHistogram.cpp.s
+
 imwrite.o: imwrite.cpp.o
 .PHONY : imwrite.o
 
@@ -1418,6 +1456,7 @@ help:
 	@echo "... gaussianBlur"
 	@echo "... houghCircle"
 	@echo "... houghLines"
+	@echo "... hsHistogram"
 	@echo "... imwrite"
 	@echo "... linearFliterComprehensive"
 	@echo "... openPicture"
@@ -1489,6 +1528,9 @@ help:
 	@echo "... houghLines.o"
 	@echo "... houghLines.i"
 	@echo "... houghLines.s"
+	@echo "... hsHistogram.o"
+	@echo "... hsHistogram.i"
+	@echo "... hsHistogram.s"
 	@echo "... imwrite.o"
 	@echo "... imwrite.i"
 	@echo "... imwrite.s"

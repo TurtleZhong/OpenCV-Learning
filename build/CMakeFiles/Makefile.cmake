@@ -63,6 +63,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/gaussianBlur.dir/DependInfo.cmake"
   "src/CMakeFiles/houghCircle.dir/DependInfo.cmake"
   "src/CMakeFiles/houghLines.dir/DependInfo.cmake"
+  "src/CMakeFiles/hsHistogram.dir/DependInfo.cmake"
   "src/CMakeFiles/imwrite.dir/DependInfo.cmake"
   "src/CMakeFiles/linearFliterComprehensive.dir/DependInfo.cmake"
   "src/CMakeFiles/openPicture.dir/DependInfo.cmake"
