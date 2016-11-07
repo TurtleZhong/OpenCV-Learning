@@ -108,4 +108,7 @@ TARGET_LINK_LIBRARIES(convexHull ${OpenCV_LIBS})
 ADD_EXECUTABLE(hsHistogram  hsHistogram.cpp)
 TARGET_LINK_LIBRARIES(hsHistogram ${OpenCV_LIBS})
 
+ADD_EXECUTABLE(histogram  histogram.cpp)
+TARGET_LINK_LIBRARIES(histogram ${OpenCV_LIBS})
+
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")

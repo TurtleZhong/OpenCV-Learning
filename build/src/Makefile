@@ -326,6 +326,20 @@ gaussianBlur/fast:
 .PHONY : gaussianBlur/fast
 
 # Convenience name for target.
+src/CMakeFiles/histogram.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/histogram.dir/rule
+.PHONY : src/CMakeFiles/histogram.dir/rule
+
+# Convenience name for target.
+histogram: src/CMakeFiles/histogram.dir/rule
+.PHONY : histogram
+
+# fast build rule for target.
+histogram/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/histogram.dir/build.make src/CMakeFiles/histogram.dir/build
+.PHONY : histogram/fast
+
+# Convenience name for target.
 src/CMakeFiles/houghCircle.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/houghCircle.dir/rule
 .PHONY : src/CMakeFiles/houghCircle.dir/rule
@@ -975,6 +989,30 @@ gaussianBlur.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/gaussianBlur.dir/build.make src/CMakeFiles/gaussianBlur.dir/gaussianBlur.cpp.s
 .PHONY : gaussianBlur.cpp.s
 
+histogram.o: histogram.cpp.o
+.PHONY : histogram.o
+
+# target to build an object file
+histogram.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/histogram.dir/build.make src/CMakeFiles/histogram.dir/histogram.cpp.o
+.PHONY : histogram.cpp.o
+
+histogram.i: histogram.cpp.i
+.PHONY : histogram.i
+
+# target to preprocess a source file
+histogram.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/histogram.dir/build.make src/CMakeFiles/histogram.dir/histogram.cpp.i
+.PHONY : histogram.cpp.i
+
+histogram.s: histogram.cpp.s
+.PHONY : histogram.s
+
+# target to generate assembly for a file
+histogram.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/histogram.dir/build.make src/CMakeFiles/histogram.dir/histogram.cpp.s
+.PHONY : histogram.cpp.s
+
 houghCircle.o: houghCircle.cpp.o
 .PHONY : houghCircle.o
 
@@ -1454,6 +1492,7 @@ help:
 	@echo "... findCounters"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
+	@echo "... histogram"
 	@echo "... houghCircle"
 	@echo "... houghLines"
 	@echo "... hsHistogram"
@@ -1522,6 +1561,9 @@ help:
 	@echo "... gaussianBlur.o"
 	@echo "... gaussianBlur.i"
 	@echo "... gaussianBlur.s"
+	@echo "... histogram.o"
+	@echo "... histogram.i"
+	@echo "... histogram.s"
 	@echo "... houghCircle.o"
 	@echo "... houghCircle.i"
 	@echo "... houghCircle.s"

@@ -310,6 +310,19 @@ gaussianBlur/fast:
 .PHONY : gaussianBlur/fast
 
 #=============================================================================
+# Target rules for targets named histogram
+
+# Build rule for target.
+histogram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 histogram
+.PHONY : histogram
+
+# fast build rule for target.
+histogram/fast:
+	$(MAKE) -f src/CMakeFiles/histogram.dir/build.make src/CMakeFiles/histogram.dir/build
+.PHONY : histogram/fast
+
+#=============================================================================
 # Target rules for targets named houghCircle
 
 # Build rule for target.
@@ -580,6 +593,7 @@ help:
 	@echo "... findCounters"
 	@echo "... floodFill"
 	@echo "... gaussianBlur"
+	@echo "... histogram"
 	@echo "... houghCircle"
 	@echo "... houghLines"
 	@echo "... hsHistogram"

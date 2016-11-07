@@ -14,6 +14,7 @@
 /home/m/zxl-opencv/build/src/CMakeFiles/findCounters.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/floodFill.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/gaussianBlur.dir
+/home/m/zxl-opencv/build/src/CMakeFiles/histogram.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/houghCircle.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/houghLines.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/hsHistogram.dir
