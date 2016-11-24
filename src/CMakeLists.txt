@@ -1,6 +1,20 @@
 CMAKE_MINIMUM_REQUIRED( VERSION 2.8 ) #设定版本
 
+
+
+
 FIND_PACKAGE( OpenCV REQUIRED )
+FIND_PACKAGE(aruco REQUIRED)
+
+# include_directories(include)
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
+)
+
+## find aruco lib
+include_directories("/usr/local/include/")
+file(GLOB aruco_LIBRARIES /usr/local/lib/*.so)
 
 # Declare the target (an executable)
 ADD_EXECUTABLE(openPicture  openPicture.cpp)
@@ -110,5 +124,8 @@ TARGET_LINK_LIBRARIES(hsHistogram ${OpenCV_LIBS})
 
 ADD_EXECUTABLE(histogram  histogram.cpp)
 TARGET_LINK_LIBRARIES(histogram ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(trackMarker trackMarker.cpp)
+TARGET_LINK_LIBRARIES(trackMarker ${OpenCV_LIBRARIES} ${aruco_LIBRARIES})
 
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")

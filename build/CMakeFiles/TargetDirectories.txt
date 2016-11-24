@@ -27,6 +27,7 @@
 /home/m/zxl-opencv/build/src/CMakeFiles/setROI.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/splitMerge.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/testMat.dir
+/home/m/zxl-opencv/build/src/CMakeFiles/trackMarker.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/trackbar_DilateAndErode.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/trackbar_contrast_brightness.dir
 /home/m/zxl-opencv/build/src/CMakeFiles/trackbar_findCounters.dir

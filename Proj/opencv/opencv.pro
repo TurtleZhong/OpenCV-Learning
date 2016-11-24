@@ -43,7 +43,8 @@ SOURCES += \
     ../../src/trackbar_findCounters.cpp \
     ../../src/convexHull.cpp \
     ../../src/hsHistogram.cpp \
-    ../../src/histogram.cpp
+    ../../src/histogram.cpp \
+    ../../src/trackMarker.cpp
 INCLUDEPATH += /usr/local/include \
                /usr/include \
 

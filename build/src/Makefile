@@ -508,6 +508,20 @@ testMat/fast:
 .PHONY : testMat/fast
 
 # Convenience name for target.
+src/CMakeFiles/trackMarker.dir/rule:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/trackMarker.dir/rule
+.PHONY : src/CMakeFiles/trackMarker.dir/rule
+
+# Convenience name for target.
+trackMarker: src/CMakeFiles/trackMarker.dir/rule
+.PHONY : trackMarker
+
+# fast build rule for target.
+trackMarker/fast:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackMarker.dir/build.make src/CMakeFiles/trackMarker.dir/build
+.PHONY : trackMarker/fast
+
+# Convenience name for target.
 src/CMakeFiles/trackbar_DilateAndErode.dir/rule:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/trackbar_DilateAndErode.dir/rule
 .PHONY : src/CMakeFiles/trackbar_DilateAndErode.dir/rule
@@ -1301,6 +1315,30 @@ testMat.cpp.s:
 	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/testMat.dir/build.make src/CMakeFiles/testMat.dir/testMat.cpp.s
 .PHONY : testMat.cpp.s
 
+trackMarker.o: trackMarker.cpp.o
+.PHONY : trackMarker.o
+
+# target to build an object file
+trackMarker.cpp.o:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackMarker.dir/build.make src/CMakeFiles/trackMarker.dir/trackMarker.cpp.o
+.PHONY : trackMarker.cpp.o
+
+trackMarker.i: trackMarker.cpp.i
+.PHONY : trackMarker.i
+
+# target to preprocess a source file
+trackMarker.cpp.i:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackMarker.dir/build.make src/CMakeFiles/trackMarker.dir/trackMarker.cpp.i
+.PHONY : trackMarker.cpp.i
+
+trackMarker.s: trackMarker.cpp.s
+.PHONY : trackMarker.s
+
+# target to generate assembly for a file
+trackMarker.cpp.s:
+	cd /home/m/zxl-opencv/build && $(MAKE) -f src/CMakeFiles/trackMarker.dir/build.make src/CMakeFiles/trackMarker.dir/trackMarker.cpp.s
+.PHONY : trackMarker.cpp.s
+
 trackbar_DilateAndErode.o: trackbar_DilateAndErode.cpp.o
 .PHONY : trackbar_DilateAndErode.o
 
@@ -1506,6 +1544,7 @@ help:
 	@echo "... setROI"
 	@echo "... splitMerge"
 	@echo "... testMat"
+	@echo "... trackMarker"
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
 	@echo "... trackbar_findCounters"
@@ -1600,6 +1639,9 @@ help:
 	@echo "... testMat.o"
 	@echo "... testMat.i"
 	@echo "... testMat.s"
+	@echo "... trackMarker.o"
+	@echo "... trackMarker.i"
+	@echo "... trackMarker.s"
 	@echo "... trackbar_DilateAndErode.o"
 	@echo "... trackbar_DilateAndErode.i"
 	@echo "... trackbar_DilateAndErode.s"

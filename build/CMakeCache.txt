@@ -187,6 +187,9 @@ OpenCV_LIB_DIR_DBG:PATH=
 //Path where release OpenCV libraries are located
 OpenCV_LIB_DIR_OPT:PATH=
 
+//The directory containing a CMake configuration file for aruco.
+aruco_DIR:PATH=aruco_DIR-NOTFOUND
+
 //Value Computed by CMake
 zxl-opencv_BINARY_DIR:STATIC=/home/m/zxl-opencv/build
 

@@ -479,6 +479,19 @@ testMat/fast:
 .PHONY : testMat/fast
 
 #=============================================================================
+# Target rules for targets named trackMarker
+
+# Build rule for target.
+trackMarker: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trackMarker
+.PHONY : trackMarker
+
+# fast build rule for target.
+trackMarker/fast:
+	$(MAKE) -f src/CMakeFiles/trackMarker.dir/build.make src/CMakeFiles/trackMarker.dir/build
+.PHONY : trackMarker/fast
+
+#=============================================================================
 # Target rules for targets named trackbar_DilateAndErode
 
 # Build rule for target.
@@ -606,6 +619,7 @@ help:
 	@echo "... setROI"
 	@echo "... splitMerge"
 	@echo "... testMat"
+	@echo "... trackMarker"
 	@echo "... trackbar_DilateAndErode"
 	@echo "... trackbar_contrast_brightness"
 	@echo "... trackbar_findCounters"

@@ -45,8 +45,6 @@ int main(int argc, char *argv[])
     }
 
 
-
-
     imshow("srcImage", srcImage);
     imshow("histImage", histImage);
 
